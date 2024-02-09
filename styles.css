@@ -1,12 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
 
+:root{
+    --main-background-colour: #1F1F1F;
+    --spotify-green: #1DB954;
+    --spotify-font: 'Montserrat', sans-serif;
+}
+
 body{
-    background-color: #1F1F1F;
+    background-color: var(--main-background-colour);
     padding: 0%;
     margin: 0;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--spotify-font);
     text-align: center;
 }
 
@@ -16,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #1DB954;
+    background-color: var(--spotify-green);
     color: white;
 }
 
@@ -111,6 +117,10 @@ a:hover::before{
     height: auto;
 }
 
+.card:hover{
+    transform: scaleX(1.05);
+    transition: ease-in-out 0.2s;
+}
 
 .music{
     display: flex;
@@ -129,5 +139,6 @@ footer{
     background-color: #1DB954;
     width: 100%;
     margin: 0;
-    height: 10%;
+    height: 20%;
+    margin-top: 50px;
 }
