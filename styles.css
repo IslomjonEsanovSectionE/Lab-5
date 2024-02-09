@@ -99,7 +99,7 @@ a:hover::before{
 
 .card{
     width: 300px;
-    background-color: black;
+    background-color: #393939;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -109,4 +109,25 @@ a:hover::before{
 .card img{
     width: 100%;
     height: auto;
+}
+
+
+.music{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.music audio{
+    margin-top: 10px;
+}
+
+footer{
+    background-color: #1DB954;
+    width: 100%;
+    margin: 0;
+    height: 10%;
 }
